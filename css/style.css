@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: Arial, Helvetica, sans-serif;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 180rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-inline: auto;
+	padding-top: 3rem;
+}
+
+.card {
+	width: 40rem;
+	height: 30rem;
+	border-radius: 1rem;
+	background-color: hsl(0, 0%, 92%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	font-weight: 600; 
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0.5rem 0.8rem 3rem 1rem hsla(0, 0%, 0%, .15); /* x y blur spread */
+}
+
+.card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0.8rem;
+	width: 100%;
+}
+
+.one::before {
+	background-color: red;
+}
+
+.two::before {
+	background-color: hsl(23, 85%, 83%);
+}
+
+.three::before {
+	background-color: hsl(120, 20%, 62%);
+}
+
+.four::before {
+	background-color: hsl(215, 31%, 50%);
+}
