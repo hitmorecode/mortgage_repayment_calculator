@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,15 +7,125 @@
 }
 
 :root {
+	--primary-color-lime: hsl(61,70%,52%);
+	--primary-color-light-lime: hsl(60, 72%, 93%);
+	--primary-color-red: hsl(4, 69%, 50%);
+	--neutral-color-white: hsl(0, 0%, 100%);
+	--neutral-color-slate-100: hsl(202, 86%, 94%); 
+	--neutral-color-slate-300: hsl(203, 41%, 72%); 
+	--neutral-color-slate-500: hsl(200, 26%, 54%);
+	--neutral-color-slate-700: hsl(200, 24%, 40%);
+	--neutral-color-slate-900: hsl(202, 55%, 16%);
+	--font-weight-500: 500;
+	--font-weight-700: 700;
 	font-size: 62.5%;
 }
 
 body {
 	font-size: 1.6rem;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
 	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
+main {
+	width: 37.5rem;
+	height: auto;
+	background-color: var(--neutral-color-slate-100);
+}
+
+.data-input {
+	padding: 3.2rem 2.4rem;
+}
+
+h1 {
+	margin-bottom: 1rem;
+}
+
+h1,
+input {
+	color: var(--neutral-color-slate-900);
+}
+
+.clear-all {
+	border: none;
+	background: none;
+	text-decoration: underline;
+	color: var(--neutral-color-slate-700);
+	font-weight: var(--font-weight-700);
+	margin-bottom: 2.8rem;
+}
+
+label {
+	color: var(--neutral-color-slate-700);
+	font-weight: var(--font-weight-700);
+	margin-bottom: 1.4rem;
+}
+
+input[type="text"] {
+	padding: 1.4rem;
+	margin-bottom: 2.6rem;
+}
+
+.clear-all,
+input {
+	font-size: 1.6rem;
+}
+
+input {
+	font-weight: var(--font-weight-700);
+}
+
+.select-mortgage-type,
+input {
+	border-radius: 0.5rem;
+	border: 0.1rem solid var(--neutral-color-slate-700);
+}
+
+input[type="radio"] {
+	transform: scale(1.5);
+}
+
+input[type="radio"]:checked {
+	accent-color: rgb(210, 159, 47);
+}
+
+.select-mortgage-type label {
+	margin-left: 1.7rem;
+}
+
+.m-amount,
+.term,
+.interest,
+.mortgage-type {
+	display: flex;
+	flex-direction: column;
+}
+
+.select-mortgage-type {
+	padding: 1.4rem 1.8rem;
+}
+
+.select-repayment {
+	margin-bottom: 1.2rem;
+}
+
+.select-interest {
+	margin-bottom: 2.4rem;
+}
+
+input[type="submit"] {
+	border: none;
+	padding: 1.6rem 1.8rem;
+	border-radius: 5rem;
+	background-color: var(--primary-color-lime);
+}
+
+/* can be removed */
+
+/*
 .container {
 	max-width: 180rem;
 	display: flex;
@@ -36,8 +148,9 @@ body {
 	position: relative;
 	overflow: hidden;
 	box-shadow: 0.5rem 0.8rem 3rem 1rem hsla(0, 0%, 0%, .15); /* x y blur spread */
-}
+/* } */
 
+/*
 .card::before {
 	content: "";
 	position: absolute;
@@ -62,3 +175,4 @@ body {
 .four::before {
 	background-color: hsl(215, 31%, 50%);
 }
+*/
