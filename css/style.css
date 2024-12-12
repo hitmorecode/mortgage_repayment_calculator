@@ -11,7 +11,7 @@
 	--primary-color-light-lime: hsl(60, 72%, 93%);
 	--primary-color-red: hsl(4, 69%, 50%);
 	--neutral-color-white: hsl(0, 0%, 100%);
-	--neutral-color-slate-100: hsl(202, 86%, 94%); 
+	--neutral-color-slate-100: hsl(202, 86%, 94%);
 	--neutral-color-slate-300: hsl(203, 41%, 72%); 
 	--neutral-color-slate-500: hsl(200, 26%, 54%);
 	--neutral-color-slate-700: hsl(200, 24%, 40%);
@@ -28,6 +28,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 2rem 0;
 }
 
 main {
@@ -36,7 +37,8 @@ main {
 	background-color: var(--neutral-color-slate-100);
 }
 
-.data-input {
+.data-input,
+footer {
 	padding: 3.2rem 2.4rem;
 }
 
@@ -56,6 +58,10 @@ input {
 	color: var(--neutral-color-slate-700);
 	font-weight: var(--font-weight-700);
 	margin-bottom: 2.8rem;
+}
+
+.clear-all:hover {
+	cursor: pointer;
 }
 
 label {
@@ -121,6 +127,32 @@ input[type="submit"] {
 	padding: 1.6rem 1.8rem;
 	border-radius: 5rem;
 	background-color: var(--primary-color-lime);
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+.border-color {
+	border: 2px solid var(--primary-color-lime);
+}
+
+footer {
+	background-color: var(--neutral-color-slate-900);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--neutral-color-white);
+	text-align: center;
+}
+
+footer img, h2 {
+	margin-bottom: 1.6rem;
+}
+
+h2 {
+	background-color: hsl(202, 56%, 12%);
 }
 
 /* can be removed */
